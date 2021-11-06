@@ -224,8 +224,7 @@ width: 100%;
     cursor: pointer;
     transition: all 300ms ease-in;
 }
-
-.card::after {
+.card::before {
     z-index: -1;
     content:"";
     position: absolute;
@@ -237,7 +236,6 @@ width: 100%;
 }
 .card:hover .card-img{
     transform: scale(1.2);
-    
 }
 .card:hover .card-footer{
     background-color: #286562;
@@ -464,9 +462,9 @@ span{
     height: 100%;
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
 }
-.history-card:hover{
+.history-card:hover .card-img{
     transform: scale(1.2);
-    z-index: 1;
+
 }
 .history-card:hover .links{
     background-color: #286562;
