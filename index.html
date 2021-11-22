@@ -38,7 +38,7 @@
                     </ul>
                 </nav>
                 <div class="telephone">
-                    <p class="p-normal">+7 999 999 99 99</p>
+                    <a class="p-normal" href="tel:+79999999999">+7 999 999 99 99</a>
                 </div>
             </div>
             <div class="header-title">
@@ -162,9 +162,10 @@
                         </div>
                         <div class="form-field form-field-select">
                             <label for="direction">Направление</label>
-                            <select name="way" class="input" id="">
-                                <option class="default" value disabled selected>Куда хотите ехать</option>
+                            <select name="way" class="input" onchange="this.style.color='black'" id="">
+                                <option class="default" >Куда хотите ехать</option>
                                 <option value="">Светлое будущее</option>
+                                <option value="">Новиград</option>
                             </select>
                         </div>
                         <div class="form-field ">
@@ -173,18 +174,18 @@
                         </div>
                         <div class="form-field">
                             <label for="telephone">Телефон</label>
-                            <input type="telephone" class="input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                            <input type="tel" class="input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" pattern="+7[0-9]{3}-[0-9]{3}" maxlength="11" required>
                         </div>
                         <div class="form-field">
                             <label for="date">Дата от</label>
-                            <input type="text" class="input" placeholder="ДД.ММ.ГГГГ" onfocus="(this.type='date')" required>
+                            <input type="text" class="input" placeholder="ДД.ММ.ГГГГ" name="date" onfocus="(this.type='date')" required>
                         </div>
                         <div class="form-field">
                             <label for="date">Дата до</label>
                             <input type="text" class="input" placeholder="ДД.ММ.ГГГГ" onfocus="(this.type='date')" required>
                         </div>
                     </div>
-                    <div class="form-field ">
+                    <div class="form-field">
                         <label class="p-normal" for="date">Комментарий</label>
                         <textarea class="input" name="comment" id="comment"></textarea>
                     </div>
@@ -192,21 +193,27 @@
                         <label for="age" class="p-normal">Вам есть 18 лет?</label>
                         <div class="check-adult">
 
-                            <input type="radio" class="input-check"
-                            name="age" value="Yes">
-                            <label class="p-normal" for="AdultYes">Да</label>
+                            <label class="label-radio p-normal">
+                                <input type="radio" class="input-radio" name="n1">
+                                <span class="fake"></span>
+                                <span class="text">Да</span>
+                            </label>
 
-                            <input type="radio" class="input-check"
-                            name="age" value="No">
-                            <label class="p-normal" for="AdultNo">Нет</label>
+                            <label class="label-radio p-normal">
+                                <input type="radio" class="input-radio" name="n1">
+                                <span class="fake"></span>
+                                <span class="text">Нет</span>
+                            </label>
 
                         </div>
                         <!-- /.check-adult -->
                     </div>
-                    <label class="lic" for="">
-                        <input type="checkbox" class="input-check">
-                        <p class="p-small">Нажимая кнопку, я принимаю условия <a href="#" class="lic-link">Лицензионного договора</a></p>
-                    </label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="input-check" id="checkbox_label">
+                        <label class="lic p-small" for="checkbox_label">                           
+                            Нажимая кнопку, я принимаю условия <a href="#" class="lic-link">Лицензионного договора</a>
+                        </label>
+                    </div>
                     <div class="inputs-set">
                         <input type="submit" class="btn find p-normal" value="Найти тур">
                         <input type="reset" class="btn reset p-normal" value="Сбросить">
@@ -285,7 +292,7 @@
             <!-- /.photos-tour -->
         </div>
     </section>
-    <section class="section">
+    <section class="section section-travel">
         <div class="container">
             <div class="history-travel">
                 <div class="title">
@@ -375,7 +382,7 @@
                 <div class="call-contatc">
                     <h3>Пора в путешествие вместе с нами!</h3>
                     <p class="p-normal">
-                        <span> Напиши на почту и узнай подробности на</span><a class="footer-link" href="#"> yourtour@gmail.com </a>
+                        <span> Напиши на почту и узнай подробности на </span><a href="mailto:yourtour@gmail.com" target="_top" class="footer-link">yourtour@gmail.com</a>
                     </p>
                 </div>
             </div>
@@ -390,15 +397,15 @@
                 <div class="social">
                     <div class="social-item">
                         <img src="img/soc-icons/inst-Vector.svg" alt="">
-                        <a href="#" class="p-normal social-link">instagram</a>
+                        <a href="#" class="p-normal footer-social-link">instagram</a>
                     </div>
                     <div class="social-item">
                         <img src="img/soc-icons/face-Vector.svg" alt="">
-                        <a href="" class="p-normal social-link">facebook</a>
+                        <a href="" class="p-normal footer-social-link">facebook</a>
                     </div>
                     <div class="social-item">
                         <img src="img/soc-icons/vk-Logo.svg" alt="">
-                        <a href="" class="p-normal social-link">vkontakte</a>
+                        <a href="" class="p-normal footer-social-link">vkontakte</a>
                     </div>
                 </div>
             </div>
