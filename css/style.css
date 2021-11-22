@@ -891,7 +891,7 @@ span{
         height: 20px;
     }
     .lic::after{
-        background:url('/img/galochka\ \(1\).svg') no-repeat;
+        background:url('../img/galochka\ \(1\).svg') no-repeat;
         /* width: 10px;
         height: 7px;*/
         top: 6px;
