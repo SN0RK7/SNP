@@ -793,27 +793,58 @@ span{
         width: 231px;
     }
 }
+@media (max-width: 960px){
+    .histories{
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .container-tour{
+        max-width: 860px;
+    }
+    .form .form-field select{
+        background-position-x: 300px;
+    }
+    .container-review{
+        max-width: 560px;
+    }
+    .reviews{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .review{
+        margin-bottom: 30px;
+       max-width: 100%;
+    }
+    .review:not(:last-child){
+        margin-right: 0;
+    }
+}
 @media (max-width: 900px){
     .form .form-field select{
         background-position-x: 300px;
     }
-
 }
 @media (max-width: 850px){
     .navbar nav{
         display: none;
     }
-    .contaimer{
-        max-width: 720px;
+    .container-tour{
+        max-width: 750px;
+    }
+    .form .form-field select{
+        background-position-x: 260px;
     }
     .cards{
         margin-bottom: 35px;
     }
+    .histories{
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+    
 }
 @media (max-width: 795px){
-    .form .form-field select{
-        background-position-x: 280px;
-    }  
+
     .socials{
         padding-left: 15px;
         padding-right: 15px;
@@ -830,6 +861,10 @@ span{
     .navbar nav{
         display: none;
     }
+    .histories{
+        margin-left: 0;
+        margin-right: 0;
+    }
     nav ul{
         display: flex;
         flex-wrap: wrap;
@@ -845,17 +880,7 @@ span{
     .reset{
         padding: 12px 31px;
     }
-    .reviews{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .review{
-        margin-bottom: 30px;
-       max-width: 100%;
-    }
-    .review:not(:last-child){
-        margin-right: 0;
-    }
+    
     .social-link {
         display: none;
     }
